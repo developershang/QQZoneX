@@ -119,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				091BE1251EA8AE6D00160BCF /* Category */,
-				09C19A501EA87F0700D08794 /* Model */,
 				09C19A551EA87F0700D08794 /* View */,
 				09C19A4F1EA87F0700D08794 /* Controller */,
 				09C19A511EA87F0700D08794 /* Other */,
@@ -140,13 +139,6 @@
 				09C2B2991EAB2E4600283F55 /* AllStatusController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		09C19A501EA87F0700D08794 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		09C19A511EA87F0700D08794 /* Other */ = {
@@ -207,8 +199,7 @@
 				TargetAttributes = {
 					09C19A331EA85BC400D08794 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 7B7K64X9LC;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -374,7 +365,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 7B7K64X9LC;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = QQZone/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = QQZone/Info.plist;
@@ -382,6 +374,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "----.QQZone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -391,7 +384,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = 7B7K64X9LC;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = QQZone/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = QQZone/Info.plist;
@@ -399,6 +393,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "----.QQZone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
