@@ -11,7 +11,7 @@ extern const CGFloat kLandscapeWidth;
 extern const CGFloat kDockscapeWidth;
 extern const CGFloat kDockPortraitWidth;
 
-
+//ss
 extern const CGFloat kDockItemHeight;
 
 
