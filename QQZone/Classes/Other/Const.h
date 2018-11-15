@@ -6,12 +6,11 @@
 //  Copyright © 2017年 developershang. All rights reserved.
 //
 
-
+// 定义说明
 extern const CGFloat kLandscapeWidth;
 extern const CGFloat kDockscapeWidth;
 extern const CGFloat kDockPortraitWidth;
 
-//ss
 extern const CGFloat kDockItemHeight;
 
 
