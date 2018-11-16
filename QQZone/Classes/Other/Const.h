@@ -7,6 +7,7 @@
 //
 
 // 定义说明
+// master 
 extern const CGFloat kLandscapeWidth;
 extern const CGFloat kDockscapeWidth;
 extern const CGFloat kDockPortraitWidth;
