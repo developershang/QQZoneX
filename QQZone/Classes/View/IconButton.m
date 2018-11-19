@@ -14,9 +14,11 @@
 {
     if (self = [super initWithFrame:frame]) {
         [self setImage:[UIImage imageNamed:@"user"] forState:UIControlStateNormal];
-        [self setTitle:@"帅伟少" forState:UIControlStateNormal];
+        [self setTitle:@"帅的不像话" forState:UIControlStateNormal];
         [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-     self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        [self.titleLabel setFont:[UIFont systemFontOfSize:16.0]];
+        
     }
     return self;
 }

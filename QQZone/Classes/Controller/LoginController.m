@@ -24,10 +24,8 @@
 
 @implementation LoginController
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-
 }
 
 
@@ -57,8 +55,6 @@
         self.MainView.userInteractionEnabled = YES;
         
     });
-    
-    
 }
 
 
@@ -88,7 +84,6 @@
         [self.passwordField becomeFirstResponder];
     }else  if (textField == self.passwordField) {
         [self loginAction:self.login];
-        
     }
     
     return YES;
