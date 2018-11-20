@@ -41,7 +41,7 @@
     self.view.backgroundColor = [UIColor  colorWithRed:55.0/255 green:55.0/255 blue:55.0/255 alpha:1.0];
     
     //2.初始化Dock
-      [self setupDock];
+    [self setupDock];
     
     //3.初始化控制器
     [self setupControllers];
@@ -79,35 +79,48 @@
     [self packNav:vc1];
 
     
-    UIViewController *vc2 = [[UIViewController alloc] init];
-    vc2.title = @"与我相关";
-    vc2.view.backgroundColor = [UIColor redColor];
-    [self packNav:vc2];
     
-    UIViewController *vc3 = [[UIViewController alloc] init];
-    vc3.title = @"照片墙";
-    vc3.view.backgroundColor = [UIColor purpleColor];
-    [self packNav:vc3];
+    NSArray * titleArr = @[@"与我相关", @"照片墙",@"电子相册",@"好友",@"更多",@"个人中心"];
     
-    UIViewController *vc4 = [[UIViewController alloc] init];
-    vc4.title = @"电子相册";
-    vc4.view.backgroundColor = [UIColor orangeColor];
-    [self packNav:vc4];
+    for (NSInteger i =0 ; i<titleArr.count; i++) {
+        UIViewController *vc = [[UIViewController alloc] init];
+        vc.title = titleArr[i];
+        vc.view.backgroundColor = [UIColor greenColor];
+        [self packNav:vc];
+        
+    }
     
-    UIViewController *vc5 = [[UIViewController alloc] init];
-    vc5.title = @"好友";
-    vc5.view.backgroundColor = [UIColor yellowColor];
-    [self packNav:vc5];
     
-    UIViewController *vc6 = [[UIViewController alloc] init];
-    vc6.title = @"更多";
-    vc6.view.backgroundColor = [UIColor greenColor];
-    [self packNav:vc6];
     
-    UIViewController *vc7 = [[UIViewController alloc] init];
-    vc7.title = @"个人中心";
-    vc7.view.backgroundColor = [UIColor lightGrayColor];
-    [self packNav:vc7];
+//    UIViewController *vc2 = [[UIViewController alloc] init];
+//    vc2.title = @"与我相关";
+//    vc2.view.backgroundColor = [UIColor redColor];
+//    [self packNav:vc2];
+//
+//    UIViewController *vc3 = [[UIViewController alloc] init];
+//    vc3.title = @"照片墙";
+//    vc3.view.backgroundColor = [UIColor purpleColor];
+//    [self packNav:vc3];
+//
+//    UIViewController *vc4 = [[UIViewController alloc] init];
+//    vc4.title = @"电子相册";
+//    vc4.view.backgroundColor = [UIColor orangeColor];
+//    [self packNav:vc4];
+//
+//    UIViewController *vc5 = [[UIViewController alloc] init];
+//    vc5.title = @"好友";
+//    vc5.view.backgroundColor = [UIColor yellowColor];
+//    [self packNav:vc5];
+//
+//    UIViewController *vc6 = [[UIViewController alloc] init];
+//    vc6.title = @"更多";
+//    vc6.view.backgroundColor = [UIColor greenColor];
+//    [self packNav:vc6];
+//
+//    UIViewController *vc7 = [[UIViewController alloc] init];
+//    vc7.title = @"个人中心";
+//    vc7.view.backgroundColor = [UIColor lightGrayColor];
+//    [self packNav:vc7];
     
 }
 
@@ -217,7 +230,6 @@
         [_dock rotateTolandScape:isLandScape];
         self.contentView.x = _dock.width;
     }];
-    
     
     
 }

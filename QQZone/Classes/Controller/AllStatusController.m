@@ -37,6 +37,8 @@
 - (void)segementClick:(UISegmentedControl*)segement{
     
     NSLog(@"cick %ld",segement.selectedSegmentIndex);
+    
+    
 }
 
 @end

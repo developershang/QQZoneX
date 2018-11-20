@@ -23,6 +23,11 @@
 		09C19A5A1EA87F7800D08794 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C19A591EA87F7800D08794 /* LoginController.m */; };
 		09C2B29A1EAB2E4600283F55 /* AllStatusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C2B2991EAB2E4600283F55 /* AllStatusController.m */; };
 		18B5808069283AB7183BC0C6 /* libPods-QQZone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A548490D765404028EAADE17 /* libPods-QQZone.a */; };
+		84BCFE7021A4328800771E71 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BCFE7121A4328800771E71 /* libAFNetworking.a */; };
+		84BCFE7221A4328D00771E71 /* liblibwebp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BCFE7321A4328D00771E71 /* liblibwebp.a */; };
+		84BCFE7421A4329100771E71 /* libSocketRocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BCFE7521A4329100771E71 /* libSocketRocket.a */; };
+		84BCFE7621A4329800771E71 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BCFE7721A4329800771E71 /* libMasonry.a */; };
+		84BCFE7821A4329E00771E71 /* libJSONModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BCFE7921A4329E00771E71 /* libJSONModel.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +63,11 @@
 		09C2B2991EAB2E4600283F55 /* AllStatusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllStatusController.m; sourceTree = "<group>"; };
 		2444DA93C2AC3ABDB02999C3 /* Pods-QQZone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQZone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QQZone/Pods-QQZone.debug.xcconfig"; sourceTree = "<group>"; };
 		3CE1028D7118C6BF641BF44A /* Pods-QQZone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QQZone.release.xcconfig"; path = "Pods/Target Support Files/Pods-QQZone/Pods-QQZone.release.xcconfig"; sourceTree = "<group>"; };
+		84BCFE7121A4328800771E71 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BCFE7321A4328D00771E71 /* liblibwebp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibwebp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BCFE7521A4329100771E71 /* libSocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocketRocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BCFE7721A4329800771E71 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BCFE7921A4329E00771E71 /* libJSONModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJSONModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A548490D765404028EAADE17 /* libPods-QQZone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QQZone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -66,6 +76,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BCFE7821A4329E00771E71 /* libJSONModel.a in Frameworks */,
+				84BCFE7621A4329800771E71 /* libMasonry.a in Frameworks */,
+				84BCFE7421A4329100771E71 /* libSocketRocket.a in Frameworks */,
+				84BCFE7221A4328D00771E71 /* liblibwebp.a in Frameworks */,
+				84BCFE7021A4328800771E71 /* libAFNetworking.a in Frameworks */,
 				18B5808069283AB7183BC0C6 /* libPods-QQZone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +202,11 @@
 		FA971ED9227778BFF479E16F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84BCFE7921A4329E00771E71 /* libJSONModel.a */,
+				84BCFE7721A4329800771E71 /* libMasonry.a */,
+				84BCFE7521A4329100771E71 /* libSocketRocket.a */,
+				84BCFE7321A4328D00771E71 /* liblibwebp.a */,
+				84BCFE7121A4328800771E71 /* libAFNetworking.a */,
 				A548490D765404028EAADE17 /* libPods-QQZone.a */,
 			);
 			name = Frameworks;
@@ -264,15 +284,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-QQZone-checkManifestLockResult.txt",
 			);
@@ -416,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -436,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
