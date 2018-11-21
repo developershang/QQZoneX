@@ -95,6 +95,13 @@
     if (sender.selected == NO) {
         self.autoLoginBtn.selected = NO;
     }
+    
+    if (sender.selected == YES) {
+        NSLog(@"记住密码。。。");
+    }else{
+        NSLog(@"取消记住密码。。。");
+    }
+    
 }
 
 
@@ -103,6 +110,7 @@
     if (sender.selected == YES) {
         self.remeberPassewordBtn.selected = YES;
     }
+    NSLog(@"自动登录。。。。");
 }
 
 

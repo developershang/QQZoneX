@@ -14,8 +14,11 @@
 #import "Tabbar.h"
 #import "BottomMenu.h"
 
-
 #import "AllStatusController.h"
+
+#import ""
+
+
 
 @interface MainViewController ()<BottomMenuDelegate,TabbarDelegate,DockBtnDelegate,DockBtnDelegate>
 {
@@ -197,7 +200,7 @@
             //1.设置呈现样式
             moodNaVC.modalPresentationStyle = UIModalPresentationFormSheet;
             //2.设置过度样式
-//            moodNaVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+            moodNaVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
             
             [self presentViewController:moodNaVC animated:YES completion:nil];
             
