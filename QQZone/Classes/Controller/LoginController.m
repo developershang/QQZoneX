@@ -8,6 +8,7 @@
 
 #import "LoginController.h"
 #import "MainViewController.h"
+#import <AFNetworking.h>
 @interface LoginController ()<UITextFieldDelegate>
 
 
@@ -45,6 +46,11 @@
     CGFloat duration = 0.618;
     [self.activityView startAnimating];
     self.MainView.userInteractionEnabled = NO;
+    
+    
+    
+    
+    
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(duration * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
       if ([account isEqualToString:@"123"] && [password isEqualToString:@"123"]) {
           self.view.window.rootViewController = [[MainViewController alloc] init];

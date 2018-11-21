@@ -28,6 +28,7 @@
 		84BCFE7421A4329100771E71 /* libSocketRocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BCFE7521A4329100771E71 /* libSocketRocket.a */; };
 		84BCFE7621A4329800771E71 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BCFE7721A4329800771E71 /* libMasonry.a */; };
 		84BCFE7821A4329E00771E71 /* libJSONModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BCFE7921A4329E00771E71 /* libJSONModel.a */; };
+		84BCFE7C21A5064600771E71 /* DataHand.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BCFE7B21A5064600771E71 /* DataHand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,8 @@
 		84BCFE7521A4329100771E71 /* libSocketRocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSocketRocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BCFE7721A4329800771E71 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BCFE7921A4329E00771E71 /* libJSONModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJSONModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BCFE7A21A5064600771E71 /* DataHand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataHand.h; sourceTree = "<group>"; };
+		84BCFE7B21A5064600771E71 /* DataHand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataHand.m; sourceTree = "<group>"; };
 		A548490D765404028EAADE17 /* libPods-QQZone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QQZone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -180,6 +183,8 @@
 				09C19A541EA87F0700D08794 /* main.m */,
 				091BE12D1EA8B2EB00160BCF /* Const.h */,
 				091BE12E1EA8B2EB00160BCF /* Const.m */,
+				84BCFE7A21A5064600771E71 /* DataHand.h */,
+				84BCFE7B21A5064600771E71 /* DataHand.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 			files = (
 				091BE1241EA8AD2C00160BCF /* Dock.m in Sources */,
 				091BE13D1EAA2E6500160BCF /* MoodViewController.m in Sources */,
+				84BCFE7C21A5064600771E71 /* DataHand.m in Sources */,
 				091BE12F1EA8B2EB00160BCF /* Const.m in Sources */,
 				09C2B29A1EAB2E4600283F55 /* AllStatusController.m in Sources */,
 				091BE1381EA9A1DB00160BCF /* IconButton.m in Sources */,
